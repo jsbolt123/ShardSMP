@@ -1,0 +1,64 @@
+# ShardSMP configuration
+# cooldown = seconds at tier 1. power = ability strength multiplier at tier 1.
+# passive-effect uses Bukkit effect names (old or new names both work).
+
+tiers:
+  max-tier: 3
+  cooldown-reduction-per-tier: 0.10   # tier 2 = -10%, tier 3 = -20% cooldown
+  power-bonus-per-tier: 0.25          # tier 2 = +25% power, tier 3 = +50%
+  top-tier-passive-bonus: true        # max tier gets +1 passive amplifier
+
+passive:
+  interval-ticks: 20
+
+death:
+  destroy-catalysts: true                    # catalyst is replaced by its shard
+  drop-shard-with-keep-inventory: false      # if false, keepInventory players keep everything
+
+elements:
+  INFERNO:
+    cooldown: 30
+    power: 1.0
+    passive-effect: FIRE_RESISTANCE
+    passive-amplifier: 0
+  TEMPEST:
+    cooldown: 35
+    power: 1.0
+    passive-effect: SPEED
+    passive-amplifier: 0
+  VOID:
+    cooldown: 25
+    power: 1.0
+    passive-effect: SLOW_FALLING
+    passive-amplifier: 0
+  VERDANT:
+    cooldown: 45
+    power: 1.0
+    passive-effect: REGENERATION
+    passive-amplifier: 0
+  FROST:
+    cooldown: 40
+    power: 1.0
+    passive-effect: RESISTANCE
+    passive-amplifier: 0
+  TREMOR:
+    cooldown: 35
+    power: 1.0
+    passive-effect: HASTE
+    passive-amplifier: 1
+  SOLAR:
+    cooldown: 40
+    power: 1.0
+    passive-effect: NIGHT_VISION
+    passive-amplifier: 0
+  PHANTOM:
+    cooldown: 50
+    power: 1.0
+    passive-effect: JUMP_BOOST
+    passive-amplifier: 1
+  CHRONO:
+    cooldown: 60
+    power: 1.0
+    passive-effect: LUCK
+    passive-amplifier: 0
+    rewind-seconds: 5
